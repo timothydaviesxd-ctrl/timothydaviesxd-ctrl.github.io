@@ -203,6 +203,9 @@ footer{padding:2rem 0;color:var(--muted);font-size:.95rem}
 
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.cue i{animation:none}.kicker span,.screen,.piece,.wave i{transition:none}}
 
+/* FILM */
+#film{padding:clamp(4rem,8vw,6.5rem) 0;background:var(--bg)}
+.film-frame{width:100%;aspect-ratio:16/9.85;border:0;display:block;border-radius:22px;background:#1F2737}
 /* ACCESSIBILITY MENU */
 .nav-right{display:flex;align-items:center;gap:1.5rem}
 .a11y-btn{display:inline-flex;align-items:center;gap:.5rem;font:700 .95rem var(--font);padding:.55rem .95rem;border-radius:999px;border:1.5px solid currentColor;background:transparent;color:inherit;cursor:pointer}
@@ -254,7 +257,7 @@ footer{padding:2rem 0;color:var(--muted);font-size:.95rem}
   <a class="brand" href="#hero">Timothy Davies</a>
   <div class="nav-right">
   <nav aria-label="Primary"><ul>
-    <li><a href="#work">Work</a></li><li><a href="#demo">Voice demo</a></li><li><a href="#approach">Approach</a></li><li><a href="#career">Career</a></li><li><a href="#contact">Contact</a></li>
+    <li><a href="#film">Film</a></li><li><a href="#work">Work</a></li><li><a href="#demo">Voice demo</a></li><li><a href="#approach">Approach</a></li><li><a href="#career">Career</a></li><li><a href="#contact">Contact</a></li>
   </ul></nav>
   <button class="a11y-btn" id="a11y-btn" type="button" aria-expanded="false" aria-controls="a11y-panel"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="7" r="1.4" fill="currentColor"/><path d="M7 10h10M12 10v4M12 14l-3 4M12 14l3 4"/></svg>Accessibility</button>
   </div>
@@ -294,6 +297,11 @@ footer{padding:2rem 0;color:var(--muted);font-size:.95rem}
   <div><dt data-count="2">2</dt><dd>Salesforce design certifications co-written, both still live</dd></div>
   <div><dt data-count="15" data-suffix=" years">15 years</dt><dd>leading experience on Salesforce, through every era of the platform</dd></div>
 </dl></div></div>
+
+<section id="film" aria-labelledby="film-title"><div class="wrap">
+  <div class="head"><h2 id="film-title">The approach in 54 seconds</h2><p class="lede">A short animated film, with original music generated in your browser. Captions are always on, and nothing plays until you press play.</p></div>
+  <iframe class="film-frame" src="motion.html" title="Experience first: a 54-second animated film with music and captions" loading="lazy" allow="autoplay"></iframe>
+</div></section>
 
 <section class="scene" id="work" aria-labelledby="work-title">
   <div class="sticky">
